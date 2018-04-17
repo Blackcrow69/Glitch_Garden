@@ -3,10 +3,10 @@ using System.Collections;
 
 public class LevelManager : MonoBehaviour {
 
-	public float autoLoadNextLevelAfter;
+	public float autoLoadNextLevelAfter; //in seconds
 	
 	void Start (){
-		if (autoLoadNextLevelAfter == 0) {
+		if (autoLoadNextLevelAfter <= 0) {
 			Debug.Log ("Level Autoload disabled");
 		} else {
 		Invoke ("LoadNextLevel", autoLoadNextLevelAfter);
