@@ -17,18 +17,18 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: {x: 4, y: 4, z: 0}
-        inSlope: {x: .359999657, y: 0, z: 0}
-        outSlope: {x: .359999657, y: 0, z: 0}
-        tangentMode: -595884
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: .239999995, y: 0, z: 0}
+        outSlope: {x: .239999995, y: 0, z: 0}
+        tangentMode: 148807716
       - time: .166666672
-        value: {x: 4.05999994, y: 4, z: 0}
-        inSlope: {x: .359999657, y: 0, z: 0}
-        outSlope: {x: .359999657, y: 0, z: 0}
-        tangentMode: 150891860
+        value: {x: .0399999991, y: 0, z: 0}
+        inSlope: {x: .239999995, y: 0, z: 0}
+        outSlope: {x: .239999995, y: 0, z: 0}
+        tangentMode: 155739452
       m_PreInfinity: 2
       m_PostInfinity: 2
-    path: 
+    path: Body
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves: []
@@ -39,7 +39,7 @@ AnimationClip:
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
     genericBindings:
-    - path: 0
+    - path: 2073732236
       attribute: 1
       script: {fileID: 0}
       classID: 4
@@ -68,38 +68,38 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 4
-        inSlope: .359999657
-        outSlope: .359999657
+        value: 0
+        inSlope: .239999995
+        outSlope: .239999995
         tangentMode: 10
       - time: .166666672
-        value: 4.05999994
-        inSlope: .359999657
-        outSlope: .359999657
+        value: .0399999991
+        inSlope: .239999995
+        outSlope: .239999995
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_LocalPosition.x
-    path: 
+    path: Body
     classID: 4
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 4
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       - time: .166666672
-        value: 4
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_LocalPosition.y
-    path: 
+    path: Body
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -118,7 +118,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_LocalPosition.z
-    path: 
+    path: Body
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves: []
