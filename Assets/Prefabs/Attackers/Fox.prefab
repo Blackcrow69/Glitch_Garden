@@ -9,8 +9,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 427372}
   - 95: {fileID: 9527372}
-  - 114: {fileID: 11444672}
   - 61: {fileID: 6158806}
+  - 50: {fileID: 5045112}
+  - 114: {fileID: 11444672}
+  - 114: {fileID: 11445112}
+  - 114: {fileID: 11455506}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
@@ -41,7 +44,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127372}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 4, z: 0}
+  m_LocalPosition: {x: 9, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 427374}
@@ -59,6 +62,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 427372}
   m_RootOrder: 0
+--- !u!50 &5045112
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127372}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!61 &6158806
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -96,7 +114,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67cb35c68fe69a7469b1c344fc1ad3d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: .400000006
+  seenEverySeconds: 10
+--- !u!114 &11445112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be9c9eb6832d53a45b60ce897be8667d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11455506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa625628cd51fd54aa00b8522daf3e1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 60
 --- !u!212 &21227372
 SpriteRenderer:
   m_ObjectHideFlags: 1

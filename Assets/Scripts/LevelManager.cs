@@ -7,7 +7,7 @@ public class LevelManager : MonoBehaviour {
 	
 	void Start (){
 		if (autoLoadNextLevelAfter <= 0) {
-			Debug.Log ("Level Autoload disabled");
+			//Debug.Log ("Level Autoload disabled");
 		} else {
 		Invoke ("LoadNextLevel", autoLoadNextLevelAfter);
 		}	
@@ -15,12 +15,12 @@ public class LevelManager : MonoBehaviour {
 	
 
 	public void LoadLevel(string name){
-		Debug.Log ("New Level load: " + name);
+		//Debug.Log ("New Level load: " + name);
 		Application.LoadLevel (name);
 	}
 
 	public void QuitRequest(){
-		Debug.Log ("Quit requested");
+		//Debug.Log ("Quit requested");
 		Application.Quit ();
 	}
 	

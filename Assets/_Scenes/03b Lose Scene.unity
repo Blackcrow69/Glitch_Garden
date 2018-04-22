@@ -284,7 +284,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Imperial Defender
+  m_Text: Imperial Pest Control
 --- !u!222 &869067659
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -305,8 +305,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -360, y: 362}
-  m_SizeDelta: {x: 793, y: 111}
+  m_AnchoredPosition: {x: -261, y: 362}
+  m_SizeDelta: {x: 991, y: 111}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &929709343
 GameObject:
@@ -610,7 +610,7 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -560, y: -47}
+  m_AnchoredPosition: {x: -560, y: -159}
   m_SizeDelta: {x: 393, y: 94}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1371118661
@@ -693,7 +693,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Start
+  m_Text: REtry
 --- !u!222 &1371118663
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -732,8 +732,8 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -484, y: 247}
-  m_SizeDelta: {x: 545, y: 79}
+  m_AnchoredPosition: {x: -452, y: 83}
+  m_SizeDelta: {x: 696, y: 145}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1654444587
 MonoBehaviour:
@@ -747,10 +747,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: .972413659, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 0, a: 1}
   m_FontData:
     m_Font: {fileID: 12800000, guid: 9475128cd26a46e4d9b4e552caeaf4db, type: 3}
-    m_FontSize: 61
+    m_FontSize: 98
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -909,7 +909,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22455324, guid: 479a653f18808bb468685fe7edb036da, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -47
+      value: -159
       objectReference: {fileID: 0}
     - target: {fileID: 22455324, guid: 479a653f18808bb468685fe7edb036da, type: 2}
       propertyPath: m_SizeDelta.x
@@ -951,6 +951,10 @@ Prefab:
     - target: {fileID: 11455326, guid: 479a653f18808bb468685fe7edb036da, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 11455324, guid: 479a653f18808bb468685fe7edb036da, type: 2}
+      propertyPath: m_Text
+      value: REtry
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 479a653f18808bb468685fe7edb036da, type: 2}

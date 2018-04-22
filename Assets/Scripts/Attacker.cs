@@ -1,24 +1,20 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using UnityEngine;using System.Collections;[RequireComponent (typeof (Rigidbody2D))]public class Attacker : MonoBehaviour {
 
-public class Attacker : MonoBehaviour {
+    [Tooltip ("Controls the spawning; Average seconds in between spawning.")]
+    public float seenEverySeconds;
 
-    [Range (-1f, 1.5f)]
-    public float walkSpeed;
+    private float currentSpeed;    private GameObject currentTarget;    private Animator anim;    // Use this for initialization    void Start() {        anim = GetComponent<Animator>();    }    // Update is called once per frame    void Update() {        transform.Translate(Vector3.left * currentSpeed * Time.deltaTime);        if (!currentTarget)
+        {
+            anim.SetBool("isAttacking", false);
+        }    }    void OnTriggerEnter2D() {        //Debug.Log(name + " trigger enter!");    }    public void SetSpeed(float speed)    {        currentSpeed = speed;    }    void StrikeCurrentTarget(float damage)    {        //Debug.Log(name + " is attacking; Damage: " + damage);        if (currentTarget)
+        {
+            Health health = currentTarget.GetComponent<Health>();
+            if (health)
+            {
+                health.DealDamage(damage);
+            }
+        }            }    public void Attack (GameObject obj)
+    {
+        currentTarget = obj;
 
-	// Use this for initialization
-	void Start () {
-        Rigidbody2D myRigidbody = gameObject.AddComponent<Rigidbody2D>();
-        myRigidbody.isKinematic = true;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        transform.Translate(Vector3.left * walkSpeed * Time.deltaTime);
-	}
-
-    void OnTriggerEnter2D () {
-        Debug.Log(name + " trigger enter!");
-    }
-
-}
+    }}
